@@ -1,55 +1,109 @@
+/* Color Variables */
+:root {
+  --turtle-green: #5FB845;
+  --turtle-shell: #8B5E3C;
+  --sun-yellow: #FFD23C;
+  --preserver-red: #D94C3D;
+  --jungle-green: #2F7F4F;
+  --wood-brown: #5A2E1D;
+  --rope-tan: #D0A972;
+  --white: #FFFFFF;
+  --off-white: #FDF6E3;
+  --text-dark: #333333;
+}
+
+/* Base Styles */
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fffdf7;
-    color: #333;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  background-color: var(--off-white);
+  color: var(--text-dark);
+}
+
+header {
+  text-align: center;
+  background-color: var(--sun-yellow);
+  padding: 1.5em 1em;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  margin: 0.2em 0;
+  color: var(--wood-brown);
+  font-size: 2em;
+}
+
+.slogan {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--turtle-green);
+  padding: 0.75em;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 1em;
+}
+
+.featured-drinks h2,
+.event-flyer h2,
+.contact h2 {
+  color: var(--wood-brown);
+  text-align: center;
+}
+
+.drinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.drink {
+  background-color: var(--white);
+  border: 1px solid var(--rope-tan);
+  padding: 1em;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.flyer {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 2em;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--wood-brown);
+  color: var(--white);
+  padding: 1em;
+  font-size: 0.9em;
+}
+
+@media (min-width: 600px) {
+  .drinks {
+    flex-direction: row;
+    justify-content: space-around;
   }
-  
-  header, nav, section, footer {
-    padding: 1em;
-    text-align: center;
-  }
-  
-  nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #007BFF;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fffdf7;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  header {
-    background: #f4f4f4;
-    padding: 1em;
-  }
-  
-  nav a {
-    margin: 0 0.5em;
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
-  }
-  
-  main {
-    padding: 1em;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1em;
-    background: #eee;
-    font-size: 0.9em;
-  }
-  
+}
