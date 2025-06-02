@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | The Lazy Turtle</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="header">
+  <nav class="dropdown-nav">
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <ul class="dropdown-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="full_menu.html">Menu</a></li>
+    <li><a href="events.html">Events</a></li>
+  </ul>
+  </nav>
+  </header>
+
+  <main class="contact-section">
+    <h1>Contact Us!</h1>
+    <p><strong>📍 Address:<br></strong>
+      <a href="https://maps.google.com/?q=601+Ocean+Drive,+Oak+Island,+NC" target="_blank">
+        601 Ocean Drive, Oak Island, NC </a>
+    </p>
+
+    <p><strong>📞 Phone:<br></strong>
+      <a href="tel:+19102787725">(910) 278-7725</a>
+    </p>
+
+    <p><strong>⏰ Hours:<br></strong>Open Daily — 11:00 AM to Close</p>
+
+    
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+    
+  </main>
+</body>
+</html>
